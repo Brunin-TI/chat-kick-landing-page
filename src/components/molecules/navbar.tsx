@@ -6,7 +6,9 @@ import DropdownMenu from "../atoms/dropdown-menu";
 interface NavBarProps {}
 const Navbar: React.FC<NavBarProps> = () => {
   return (
-    <div className={` flex flex-col lg:flex-row items-center w-full mt-4 `}>
+    <div
+      className={` flex flex-col lg:flex-row items-center w-full mt-4 bg-white z-10 lg:z-0 py-10 lg:p-0`}
+    >
       <DropdownMenu
         label="resources"
         items={[
@@ -36,12 +38,12 @@ const Navbar: React.FC<NavBarProps> = () => {
       </button>
       <div className="py-3 lg:pr-10" />
       <Button
-        label="Sign in"
+        placeholder="Sign in"
         className=" flex border border-button-border bg-white  justify-center items-center  h-10 w-40  border-solid rounded-md font-bold text-button-border uppercase text-xs  "
       />
       <div className="py-2 lg:px-5" />
       <Button
-        label="Get early access"
+        placeholder="Get early access"
         leftIcon={<EmailIcon />}
         className="  w-[248px]  h-10  flex  items-center  justify-between px-10 rounded-md bg-button-darkTurquoise   font-bold text-white uppercase text-sm  "
       />
