@@ -28,8 +28,8 @@ const Navbar: React.FC<NavBarProps> = () => {
         label="products"
         items={[
           { label: "GLOSSARY", icon: <GlossaryIcon /> },
-          { label: "INTERVIEW GUIDES", icon: <GuidesIcon /> },
-          { label: "Library", icon: <LibraryIcon /> },
+          { label: "INTERVIEW ", icon: <GuidesIcon /> },
+          { label: "LIBRARY", icon: <LibraryIcon /> },
         ]}
       />
       <Separator className="py:1 lg:px-6" />
@@ -37,8 +37,8 @@ const Navbar: React.FC<NavBarProps> = () => {
         label="solutions"
         items={[
           { label: "GLOSSARY", icon: <GlossaryIcon /> },
-          { label: "INTERVIEW GUIDES", icon: <GuidesIcon /> },
-          { label: "Library", icon: <LibraryIcon /> },
+          { label: "INTERVIEW ", icon: <GuidesIcon /> },
+          { label: "LIBRARY", icon: <LibraryIcon /> },
         ]}
       />
       <Separator className="py:1 lg:px-6" />
