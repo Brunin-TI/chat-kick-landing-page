@@ -1,7 +1,13 @@
 import React from "react";
-import { ChevronDownIcon, EmailIcon } from "../../assets/icons/Icon";
+import {
+  EmailIcon,
+  GlossaryIcon,
+  GuidesIcon,
+  LibraryIcon,
+} from "../../assets/icons/Icon";
 import Button from "../atoms/button";
 import DropdownMenu from "../atoms/dropdown-menu";
+import Separator from "../atoms/separator";
 
 interface NavBarProps {}
 const Navbar: React.FC<NavBarProps> = () => {
@@ -12,41 +18,44 @@ const Navbar: React.FC<NavBarProps> = () => {
       <DropdownMenu
         label="resources"
         items={[
-          { label: "Leo", icon: <ChevronDownIcon /> },
-          { label: "Bruno", icon: <ChevronDownIcon /> },
+          { label: "GLOSSARY", icon: <GlossaryIcon /> },
+          { label: "INTERVIEW ", icon: <GuidesIcon /> },
+          { label: "LIBRARY", icon: <LibraryIcon /> },
         ]}
       />
-      <div className="py:1 lg:px-6" />
+      <Separator className="py:1 lg:px-6" />
       <DropdownMenu
         label="products"
         items={[
-          { label: "Torres", icon: <ChevronDownIcon /> },
-          { label: "Careca", icon: <ChevronDownIcon /> },
+          { label: "GLOSSARY", icon: <GlossaryIcon /> },
+          { label: "INTERVIEW GUIDES", icon: <GuidesIcon /> },
+          { label: "Library", icon: <LibraryIcon /> },
         ]}
       />
-      <div className="py:1 lg:px-6" />
+      <Separator className="py:1 lg:px-6" />
       <DropdownMenu
         label="solutions"
         items={[
-          { label: "Boi", icon: <ChevronDownIcon /> },
-          { label: "Corno", icon: <ChevronDownIcon /> },
+          { label: "GLOSSARY", icon: <GlossaryIcon /> },
+          { label: "INTERVIEW GUIDES", icon: <GuidesIcon /> },
+          { label: "Library", icon: <LibraryIcon /> },
         ]}
       />
-      <div className="py:1 lg:px-6" />
+      <Separator className="py:1 lg:px-6" />
       <button className="flex text-sm font-bold text-opacity-80 text-primary-50 uppercase ">
         Pricing
       </button>
-      <div className="py-3 lg:pr-10" />
+      <Separator className="py:1 lg:px-6" />
+      <Button className=" flex border border-button-border bg-white  justify-center items-center  h-10 w-40  border-solid rounded-md font-bold text-button-border uppercase text-xs  ">
+        Sign in
+      </Button>
+      <Separator className="py-2 lg:px-5" />
       <Button
-        placeholder="Sign in"
-        className=" flex border border-button-border bg-white  justify-center items-center  h-10 w-40  border-solid rounded-md font-bold text-button-border uppercase text-xs  "
-      />
-      <div className="py-2 lg:px-5" />
-      <Button
-        placeholder="Get early access"
         leftIcon={<EmailIcon />}
         className="  w-[248px]  h-10  flex  items-center  justify-between px-10 rounded-md bg-button-darkTurquoise   font-bold text-white uppercase text-sm  "
-      />
+      >
+        Get early access
+      </Button>
     </div>
   );
 };

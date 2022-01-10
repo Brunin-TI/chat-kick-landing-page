@@ -1,20 +1,20 @@
 import React from "react";
 
 interface ButtonProps {
-  placeholder?: string;
+  children?: string;
   onClick?: () => void;
   className?: string;
   leftIcon?: React.ReactNode;
 }
 const Button: React.FC<ButtonProps> = ({
-  placeholder,
+  children,
   onClick,
   className,
   leftIcon,
 }) => {
   return (
-    <div onClick={onClick} className={`${className}`}>
-      {leftIcon} {placeholder}
+    <div onClick={onClick} className={`${className} cursor-pointer`}>
+      {leftIcon} {children}
     </div>
   );
 };

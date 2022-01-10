@@ -8,7 +8,6 @@ type ItemsMenu = {
 };
 interface DropdownMenuProps {
   label: string;
-
   items: ItemsMenu[];
 }
 const DropdownMenu: React.FC<DropdownMenuProps> = ({ label, items }) => {
@@ -16,7 +15,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ label, items }) => {
     <Menu as="div" className="relative inline-block ">
       <Menu.Button>
         <div className="flex-row flex items-center ">
-          <div className="text-sm font-bold text-opacity-80 text-primary-50 uppercase">
+          <div className="text-sm font-bold text-opacity-80 text-primary-50 uppercase ">
             {label}
           </div>
           <div className="hidden lg:flex lg:pl-2 ">
