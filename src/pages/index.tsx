@@ -45,16 +45,16 @@ const Home: React.FC<HomeProps> = () => {
         >
           <div className=" flex  flex-col lg:flex-1   items-center lg:pl-32 lg:justify-center    ">
             <div className=" flex  w-[250px] h-[20] lg:w-[350px] lg:h-[90px] items-center  ">
-              <text className="font-bold  text-lg lg:text-4xl  text-bluePigment uppercase text-center lg:text-left">
+              <Text className="font-bold  text-lg lg:text-4xl  text-bluePigment uppercase text-center lg:text-left">
                 Create interview plans
-              </text>
+              </Text>
             </div>
             <div className="pt-3 pb-7  w-[326px] lg:w-[350px] h-[51px]  ">
-              <text className=" flex items-center text-xs  font-normal text-center  lg:text-left lg:text-lg">
+              <Text className=" flex items-center text-xs  font-normal text-center  lg:text-left lg:text-lg">
                 Use one of our hundreds of pre-built plan templates or customize
                 your own to easily share and collaborate on your company’s
                 hiring process.
-              </text>
+              </Text>
             </div>
           </div>
           <div className="flex flex-1 items-center lg:justify-end px-5 pt-7 lg:pr-28">
